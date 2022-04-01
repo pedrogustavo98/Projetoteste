@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+/*Faixa superior do projeto*/
+.menu-topo{
+    display: flex;
+    flex-direction: rown;
+    margin: auto;
+    width: 90%;
+    height:600px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    background-color: #29292b;
+}
+
+
+.faixa_topo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-size: 14px;
+    background-color: #29292b;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    color: #c8c8c8;
+}
+
+
+.icone_menu{
+    position: static;
+    width:16px;
+    height:30px;
+    margin-left: 5px;
+}
+
+
+.icone_local>img{
+    position: static;
+    width:100%;
+    height:100%;
+    padding-left:25px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.icone_telefone>img{
+    width:100%;
+    height:100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.elementos_faixa{
+    font-size: 14px;
+    margin-left: 0x;
+    padding-left: 5px;
+}
+
+
+.margin_faixa{
+    margin-left: 5px;
+}
+
+
+.redes_sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    width:50px;
+    height: inherit;
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    font-size: 22px;
+    font-weight: 600;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -user-select: none;
+
+}
+
+
+
+#facebook{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:30px;
+    height: 18px;
+    color: #c8c8c8;
+    background: #29292b;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#facebook:hover{
+    transition: all 0.3s;
+    color:#428bca;
+}
+
+
+
+#linkedin{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:30px;
+    height: 18px;
+    color: #c8c8c8;
+    background: #29292b;
+    cursor: pointer;
+}
+
+#linkedin:hover{
+    transition: all 0.3s;
+    color:#1b98e0;
+}
+
+
+.area_login{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#button_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:30px;
+    width:129.11px;
+    background-color: #1b98e0;
+    color:white;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+/*Encerramento da faixa(cinza)*/
+
+/*Inicio barra superior branca*/
+
+header{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    align-items:flex-end;
+    margin: auto;
+    width: 100%;
+    height:91px;
+    background-color: white;
+}
+
+.container_menu{
+    margin:auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:91px;
+    width:85%;
+}
+
+
+.logo{
+    margin-top: 10pxs;
+    width: 230px;
+    height: 60px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+
+.lista_menu{
+    width: 90%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:#2c2c2c;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*
+.item_menu:hover{
+    color:#1b98e0;
+    cursor: pointer;
+    transition: color 0.3s;
+}*/
+
+/*Fim barra superior branca*/
+
+
+
+.menuTexto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 0px 15px;
+    color:#2c2c2c;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+#menu{
+    width: 100%;
+
+}
+
+.menuItem{
+    width: 150px;
+    height: 35px;
+    float: left;
+
+}
+
+.menuItem:hover, .submenuItem:hover{
+    color: #1b98e0;
+    cursor: pointer;
+}
+
+.submenu{
+    background-color: white;
+    width: 280px;
+    min-height: 50px;
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color: yellow;
+
+}
+
+.marcador_submenu{
+    height: 100%;
+    width:4px;
+    margin-right: 15px;
+}
+
+
+
+.submenuItem:hover > .marcador_submenu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #1b98e0;
+    text-align: center;
+}
+
+
+.submenuItem:hover{
+    color: #333333;
+    transition: 2s;
+}
+
+.submenuItem{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-weight: normal;
+    font-size: 16px;
+    color: #8d8d8d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    height: 55px;
+    border-bottom:solid 1px #dfe5e8;
+    border-left:solid 1px #dfe5e8;
+    border-right:solid 1px #dfe5e8;
+}
+
+.menuItem:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 15px;
+    transition: 1s;
+}
